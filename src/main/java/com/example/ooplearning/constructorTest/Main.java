@@ -6,10 +6,14 @@ public class Main {
 
     public static void main(String [] args) {
 
+        Person oleg = new Person("Oleg","Kolev",'m');
+        System.out.println(oleg);
 
     }
 }
 
+
+/*
 class Person {
     String name;
     protected int age;
@@ -74,4 +78,31 @@ class Fraction{
         this.denominator = denominator;
     }
 
+}*/
+
+
+class Person {
+    private String firstName;
+    private String lastName;
+    private char gender;
+
+    public Person (String lastName, String firstName, char gender){
+        this(lastName, firstName);
+        this.gender = gender;
+    }
+
+    public Person(String lastName, String firstName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", gender=" + gender +
+                '}';
+    }
 }
+

@@ -78,3 +78,5 @@ fabric.properties
 /pom.xml
 /src/main/java/module-info.java
 /target/classes/com/example/ooplearning/hello-view.fxml
+/.mvn/wrapper/
+/src/main/resources/com/example/ooplearning/
